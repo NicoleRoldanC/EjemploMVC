@@ -5,6 +5,9 @@ import Control.MenuPrincipal_Control;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
+//Nicole Roldan
+//Codigo:2355039
+
 //Aqui tendremos solo la parte de la GUI del MenuPrincipal
 // porque hace parte de VISTA
 
