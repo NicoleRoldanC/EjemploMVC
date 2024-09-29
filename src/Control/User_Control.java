@@ -39,11 +39,17 @@ public class User_Control implements ActionListener{
             user_modelo = new User_Modelo(this); //instanciamos user modelo
             user_modelo.guardar(datos); //ya con esto user_modelo puede guardar la info en datos
             
-            
+        //Si el boton seleccionado es... 
         }
         if(e.getSource().equals(objUser.jbVolver)){  //si la fuente del evento es jbVolver
             evento_volver();
         } 
+        if(e.getSource().equals(objUser.jbConsultar)){  //si la fuente del evento es jbConsultar
+            String id_buscar = objUser.jtID.getText(); //definimos un nombre para la accion de buscar que estamos haciendo. En este caso buscamos por ID, info que sacamos de user.java
+            
+            user_modelo = new User_Modelo(this);
+            user_modelo.consultar(id_buscar);              
+        }
                      
     }
 

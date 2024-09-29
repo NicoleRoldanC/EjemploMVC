@@ -16,7 +16,7 @@ public class User extends JFrame {
     
     public JTextField jtID, jtApe, jtNom;   //todo lo de aca es lo que vamos a usar
     public JRadioButton jrActivo, jrInactivo, jrOculto;
-    public JButton jbGuardar, jbVolver;
+    public JButton jbGuardar, jbVolver, jbConsultar;
     public MenuPrincipal mp; //Declaramos un obj del menuprincipal para poder acceder a el desde user
     public User_Control user_control;
     
@@ -112,6 +112,12 @@ public class User extends JFrame {
         jbVolver.setBounds(140,220,100,25);
         jbVolver.addActionListener(user_control);
         add(jbVolver);
+        
+        //Boton consultar
+        jbConsultar = new JButton("Consultar");
+        jbConsultar.setBounds(250,220,100,25);
+        jbConsultar.addActionListener(user_control);
+        add(jbConsultar);
            
     }
     
